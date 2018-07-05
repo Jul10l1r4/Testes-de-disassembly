@@ -6,5 +6,8 @@
 
 	Diante das primeiras analizes obtive alguns detalhes a respeito das bibliotecas usadas:
 
+## Observações primárias
+
+
 ------------
 [1] https://www.gnu.org/software/m68hc11/examples/stdio_8h-source.html
