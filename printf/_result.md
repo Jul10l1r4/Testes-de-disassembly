@@ -5,9 +5,10 @@ Antes de estudar o assunto é necessario vê suas dependencias, nesse caso usamo
 ## Primeiras analizes
 
 Diante das primeiras analizes obtive alguns detalhes a respeito das bibliotecas usadas:
+![Ldd print the dependencies](https://raw.githubusercontent.com/Jul10l1r4/Testes-de-disassembly/master/printf/img/ldd1.png)
 
 ## Observações primárias
 
 
-------------
+
 [1] https://www.gnu.org/software/m68hc11/examples/stdio_8h-source.html
