@@ -11,16 +11,17 @@ Dentro do `stdio.h` possuimos:
 * linux-ldso.so
 * libc.so
 * ld-linux-x86-x64.so
-Esses arquivos são as dependencias da biblioteca `stdio.h`.
 
 ## Observações primárias
-Por padrão as três bibliotecas são usadas em todas as compilações criadas pelo gcc, em alguma
-plataforma gnu/linux.
+Por padrão as três bibliotecas exceto a `libc` são usadas em todas as compilações [e em todas as linguagens] em sistemas unix-like.
 
-### Detalhes de `linux-ldso.so`
+### Detalhes de `ld-linux-*.so`
 É um carregador (vinculador) dinâmico (que fornece tipagem e prepara [colocando bibliotecas necessarias] para a compilação)[2]. No ELF(Executable and linkable format, que é o padrão de objetos executaveis do unix) a `ldso` é referenciada como a seção `.interp`.
 
+Então será muito comum vermos `.interp` em programas compilados em unix-like, não apenas em C mas como em outras linguagens compiladas.
 
+** `.interp` :** É uma sessão na qual costuma ser uma das primeiras, justamentes pela posição no código quanto o fato de ser executável, **Todos esses pacotes de conversão e de pre-tipagens e de tipagens são disponíveis graças ao [binutil](http://www.sourceware.org/binutils/).**
+![pegando informações detalhadas](https://github.com/Jul10l1r4/Testes-de-disassembly/blob/master/printf/img/objdump.png?raw=true)
 
 [1] https://www.gnu.org/software/m68hc11/examples/stdio_8h-source.html
 
