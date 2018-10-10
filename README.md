@@ -7,7 +7,7 @@ created by [@Jul10l1r4](https://github.com/Jul10l1r4)
 
 > É um grupo de analize para conhecimento em debbugação,engenharia reversa, C e Assembly x64.
 
-# Funções simples:
+## Funções simples:
 
 [pritf e introdução](https://github.com/Jul10l1r4/Testes-de-disassembly/tree/master/printf)
 
@@ -16,4 +16,4 @@ created by [@Jul10l1r4](https://github.com/Jul10l1r4)
 Da um fork, e ajudar a melhorar!
 Talvez você ou alguem precise disso algum dia! <3
 
-* [Pull requests](.github/CONTRIBUTING.md#pull-requests)
+* [Pull requests](.github/#pull-requests)
