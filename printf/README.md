@@ -15,6 +15,9 @@ Dentro do `stdio.h` possuimos:
 ## Observações primárias
 Por padrão as três bibliotecas exceto a `libc` são usadas em todas as compilações [e em todas as linguagens] em sistemas unix-like.
 
+### Detalhes de `linux-ldso.so`
+Assim como o `ld-linux` o `ldso` também é um carregador dinâmico de bibliotecas compartilhadas, mas o `ldso` é onde a linguagem armazena padrões de diretórios para ser consultada e verificar a existência ou não daquela biblioteca.
+
 ### Detalhes de `ld-linux-*.so`
 É um carregador (vinculador) dinâmico [que fornece tipagem e prepara (colocando bibliotecas necessarias) para a compilação](2). No ELF(Executable and linkable format, que é o padrão de objetos executaveis do unix) a `ldso` é referenciada como a seção `.interp`.
 
@@ -23,6 +26,8 @@ Então será muito comum vermos `.interp` em programas compilados em unix-like, 
 **`.interp`:** É uma sessão na qual costuma ser uma das primeiras, justamentes pela posição no código quanto o fato de ser executável, **Todos esses pacotes de conversão e de pre-tipagens e de tipagens são disponíveis graças ao [binutil](http://www.sourceware.org/binutils/).**
 ![pegando informações detalhadas](https://github.com/Jul10l1r4/Testes-de-disassembly/blob/master/printf/img/readelf.png?raw=true)
 
-[1] https://www.gnu.org/software/m68hc11/examples/stdio_8h-source.html
+https://www.gnu.org/software/m68hc11/examples/stdio_8h-source.html
 
-[2] http://man7.org/linux/man-pages/man8/ld.so.8.html
+http://man7.org/linux/man-pages/man8/ld.so.8.html
+
+http://www.gem5.org/wiki/images/0/0c/2015_ws_08_dynamic-linker.pdf
